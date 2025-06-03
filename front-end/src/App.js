@@ -5,7 +5,9 @@ import FormCategoria from './paginas/FormCategoria';
 import Home from './paginas/Home';
 import ListaAutor from './paginas/ListaAutor';
 import ListaCategoria from './paginas/ListaCategoria';
-import FormAutor from './paginas/FormAutor'; 
+import FormAutor from './paginas/FormAutor';
+import ListaEditoras from './paginas/ListaEditoras';
+import FormEditora from './paginas/FormEditora';
 
 function App() {
   return (
@@ -16,9 +18,12 @@ function App() {
         <Route path="/listarcategoria" element={<ListaCategoria />} />
         <Route path="/cadastrocategoria" element={<FormCategoria />} />
         <Route path="/cadastrocategoria/:id" element={<FormCategoria />} />
-        <Route path='/listaautor' element={<ListaAutor />} />
-        <Route path='/cadastroautor' element={<FormAutor />} />
-        <Route path='/cadastroautor/:id' element={<FormAutor />} />
+        <Route path="/listaautor" element={<ListaAutor />} />
+        <Route path="/cadastroautor" element={<FormAutor />} />
+        <Route path="/cadastroautor/:id" element={<FormAutor />} />
+        <Route path="/editoras" element={<ListaEditoras />} />
+        <Route path="/editoras/nova" element={<FormEditora />} />
+        <Route path="/editoras/:id" element={<FormEditora />} />
         <Route path="*" element={<Home />} />
       </Routes>
     </BrowserRouter>

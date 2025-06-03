@@ -32,6 +32,11 @@ export default function Menu() {
                   <i className="bi bi-person-lines-fill"></i> Autores
                 </a>
               </li>
+              <li className="nav-item">
+                <a className="nav-link" href="/editoras">
+                <i className="bi bi-building"></i> Editoras
+                </a>
+              </li>
             </ul>
           </div>
         </div>
