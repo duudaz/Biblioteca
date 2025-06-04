@@ -44,6 +44,16 @@ export default function Menu() {
                   <i className="bi bi-building"></i> Editoras
                 </Link>
               </li>
+              <li className="nav-item">
+                <Link className="nav-link" to="/usuarios">
+                  <i className="bi bi-people"></i> Usuários
+                </Link>
+                <li className="nav-item">
+              <Link className="nav-link" to="/funcionarios">
+                <i className="bi bi-person-badge"></i> Funcionários
+              </Link>
+              </li>
+              </li>
             </ul>
           </div>
         </div>
