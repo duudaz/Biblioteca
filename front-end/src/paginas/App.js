@@ -10,6 +10,12 @@ import ListaEditoras from './paginas/ListaEditoras';
 import FormEditora from './paginas/FormEditora';
 import LivroList from './paginas/ListaLivro';
 import FormLivro from './paginas/FormLivro';
+import UsuarioList from './paginas/ListaUsuario';
+import FormUsuario from './paginas/FormUsuario';
+import ListaFuncionario from './paginas/ListaFuncionario';
+import FormFuncionario from './paginas/FormFuncionario';
+import AcervoLivros from './paginas/AcervoLivros';
+import FormEmprestimo from './paginas/FormEmprestimo';
 
 function App() {
   return (
@@ -28,6 +34,15 @@ function App() {
         <Route path="/editoras/:id" element={<FormEditora />} />
         <Route path="/livros" element={<LivroList />} />
         <Route path="/livro/:id" element={<FormLivro />} />
+        <Route path="/usuarios" element={<UsuarioList />} />
+        <Route path="/usuario/novo" element={<FormUsuario />} />
+        <Route path="/usuario/:id" element={<FormUsuario />} />
+        <Route path="/funcionarios" element={<ListaFuncionario />} />
+        <Route path="/funcionario/novo" element={<FormFuncionario />} />
+        <Route path="/funcionario/:id" element={<FormFuncionario />} />
+        <Route path="/acervo" element={<AcervoLivros />} />
+        <Route path="/emprestimo/:idlivro" element={<FormEmprestimo />} />
+
         <Route path="*" element={<Home />} />
       </Routes>
     </BrowserRouter>
